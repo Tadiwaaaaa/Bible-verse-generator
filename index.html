@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>AI Bible Verse Generator</h1>
     </header>
@@ -19,10 +20,11 @@
           autofocus
           required
           autocomplete="off"
+          class="instruction"
         />
-        <input type="submit" />
+        <input type="submit" class="submit-button"/>
       </form>
-      <div>The verse will go here</div>
+      <div class=" verse">The verse will go here</div>
     </main>
   </body>
   <footer>
@@ -32,5 +34,6 @@
     <a href="https://github.com/Tadiwaaaaa/Bible-verse-generator">Github</a> and
     is hosted on <a href="https://www.netlify.com/">Netlify</a>
   </footer>
+  </div>
   <script src="index.js"></script>
 </html>

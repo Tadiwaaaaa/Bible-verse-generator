@@ -21,15 +21,16 @@ function generateVerse(event) {
   let apiUrl =
     `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+ let verseElement = document.querySelector(".verse");
+  verseElement.style.display = "block";
+  
     console.log("generating verse ");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);
 
 
     axios.get(apiUrl).then(displayVerse);
-
-
-}
+}  
 
 let verseformElement = document.querySelector(".form");
 verseformElement.addEventListener("submit", generateVerse);
